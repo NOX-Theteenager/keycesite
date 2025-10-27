@@ -3,36 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>École d'Informatique - Programmes</title>
+    <meta name="description" content="Découvrez tous les programmes de formation KEYCE : Bachelor et Masters en Informatique">
+    <title>Nos Programmes - KEYCE Informatique</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="images/logo.png" alt="Logo de l'école" class="logo">
+            <img src="images/logo.png" alt="Logo KEYCE" class="logo">
             <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="programmes.html">Programmes</a></li>
-                    <li><a href="international.html">Mobilité Internationale</a></li>
+                    <li><a href="international.html">International</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <button id="menu-toggle">☰</button>
+            <button id="menu-toggle" aria-label="Menu de navigation">☰</button>
         </div>
     </header>
+    
     <main>
-        <section>
-            <h1>Nos Programmes</h1>
-            <p>Découvrez nos formations en Bachelor et Master.</p>
-            <a href="bachelor.html" class="btn">Bachelor en Informatique</a>
-            <a href="master.html" class="btn">Master en Informatique</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Nos Programmes de Formation</h1>
+                <p>Du Bachelor au Master, des formations d'excellence en informatique</p>
+            </div>
+        </section>
+
+        <!-- Complete rewrite with comprehensive program overview -->
+        <section class="features">
+            <div class="container">
+                <h2>Formations KEYCE</h2>
+                <p style="max-width: 900px; margin: 0 auto 60px; text-align: center; font-size: 1.15em; line-height: 1.8; color: #4a4a4a;">
+                    KEYCE propose des formations complètes en informatique, du niveau Bachelor (Bac+3) au Master (Bac+5). Nos programmes sont conçus pour répondre aux besoins du marché et former des professionnels compétents et immédiatement opérationnels.
+                </p>
+
+                <h2 style="margin-top: 60px; margin-bottom: 50px;">Bachelor - Bac+3</h2>
+                <div class="program-card" style="max-width: 900px; margin: 0 auto 80px;">
+                    <h3>Bachelor en Informatique</h3>
+                    <p style="font-size: 1.1em; margin-bottom: 25px;">Formation généraliste en 3 ans pour acquérir les fondamentaux de l'informatique et se préparer aux métiers du développement, des réseaux et des systèmes.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
+                        <div>
+                            <strong style="color: #0066cc;">Durée :</strong>
+                            <p>3 ans</p>
+                        </div>
+                        <div>
+                            <strong style="color: #0066cc;">Niveau :</strong>
+                            <p>Bac+3 (180 ECTS)</p>
+                        </div>
+                        <div>
+                            <strong style="color: #0066cc;">Prérequis :</strong>
+                            <p>Baccalauréat</p>
+                        </div>
+                        <div>
+                            <strong style="color: #0066cc;">Rythme :</strong>
+                            <p>Initial ou alternance</p>
+                        </div>
+                    </div>
+
+                    <h4 style="color: #0066cc; margin-top: 25px; margin-bottom: 15px;">Compétences Acquises :</h4>
+                    <ul style="text-align: left; line-height: 1.8; color: #4a4a4a; columns: 2; column-gap: 30px;">
+                        <li>Programmation (Java, Python, JavaScript)</li>
+                        <li>Développement web et mobile</li>
+                        <li>Bases de données</li>
+                        <li>Réseaux et systèmes</li>
+                        <li>Gestion de projets</li>
+                        <li>Sécurité informatique</li>
+                    </ul>
+
+                    <a href="bachelor.html" class="btn-primary" style="margin-top: 30px;">Découvrir le Bachelor →</a>
+                </div>
+
+                <h2 style="margin-top: 60px; margin-bottom: 50px;">Masters - Bac+5</h2>
+                <p style="max-width: 900px; margin: 0 auto 50px; text-align: center; font-size: 1.1em; line-height: 1.7; color: #4a4a4a;">
+                    Nos Masters permettent de se spécialiser dans les domaines les plus demandés de l'informatique. Formations en 2 ans accessibles après un Bachelor ou une Licence.
+                </p>
+
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <h3>Master Intelligence Artificielle</h3>
+                        <p>Spécialisation en IA, Machine Learning, Data Science et analyse de données massives.</p>
+                        <div style="margin: 20px 0;">
+                            <strong style="color: #0066cc;">Débouchés :</strong>
+                            <p style="margin-top: 8px; color: #4a4a4a;">Data Scientist, Ingénieur IA, Consultant en IA</p>
+                        </div>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+
+                    <div class="program-card">
+                        <h3>Master Cybersécurité</h3>
+                        <p>Expertise en sécurité des systèmes, protection des données et gestion des risques numériques.</p>
+                        <div style="margin: 20px 0;">
+                            <strong style="color: #0066cc;">Débouchés :</strong>
+                            <p style="margin-top: 8px; color: #4a4a4a;">Expert cybersécurité, Pentester, RSSI</p>
+                        </div>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+
+                    <div class="program-card">
+                        <h3>Master Génie Logiciel</h3>
+                        <p>Maîtrise de l'architecture logicielle, du développement avancé et du Cloud Computing.</p>
+                        <div style="margin: 20px 0;">
+                            <strong style="color: #0066cc;">Débouchés :</strong>
+                            <p style="margin-top: 8px; color: #4a4a4a;">Architecte logiciel, Lead Dev, DevOps Engineer</p>
+                        </div>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 50px; border-radius: 12px; margin-top: 80px;">
+                    <h2 style="color: #0066cc; margin-bottom: 30px; text-align: center;">Pourquoi Choisir KEYCE ?</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 3em; margin-bottom: 15px;">🎓</div>
+                            <h4 style="color: #0066cc; margin-bottom: 10px;">Diplômes Reconnus</h4>
+                            <p style="color: #4a4a4a;">Certifications reconnues par l'État</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 3em; margin-bottom: 15px;">💼</div>
+                            <h4 style="color: #0066cc; margin-bottom: 10px;">95% d'Insertion</h4>
+                            <p style="color: #4a4a4a;">Emploi dans les 6 mois</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 3em; margin-bottom: 15px;">🌍</div>
+                            <h4 style="color: #0066cc; margin-bottom: 10px;">Mobilité Internationale</h4>
+                            <p style="color: #4a4a4a;">50+ partenaires dans le monde</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 3em; margin-bottom: 15px;">🚀</div>
+                            <h4 style="color: #0066cc; margin-bottom: 10px;">Pédagogie Innovante</h4>
+                            <p style="color: #4a4a4a;">Projets concrets et technologies actuelles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Trouvez Votre Formation</h2>
+                <p>Contactez-nous pour obtenir plus d'informations sur nos programmes et les modalités d'admission</p>
+                <a href="contact.html" class="btn-primary">Nous contacter</a>
+            </div>
         </section>
     </main>
+    
     <footer>
-        <p>&copy; 2025 École d'Informatique. Tous droits réservés.</p>
+        <div class="container">
+            <p>&copy; 2025 KEYCE Informatique. Tous droits réservés.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,39 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>École d'Informatique - Accueil</title>
+    <meta name="description" content="KEYCE - École d'informatique d'excellence proposant des formations Bachelor et Master avec opportunités internationales">
+    <title>KEYCE Informatique - École d'Excellence en Informatique</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <div id="intro-overlay">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="videos/cinematic.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <button id="skip-intro" aria-label="Passer l'introduction">Passer</button>
+    </div>
+
+    <header class="hidden">
         <div class="container">
-            <img src="images/logo.png" alt="Logo de l'école" class="logo">
+            <img src="images/logo.png" alt="Logo KEYCE" class="logo">
             <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
                     <li><a href="programmes.html">Programmes</a></li>
-                    <li><a href="international.html">Mobilité Internationale</a></li>
+                    <li><a href="international.html">International</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <button id="menu-toggle">☰</button>
+            <button id="menu-toggle" aria-label="Menu de navigation">☰</button>
         </div>
     </header>
-    <main>
+
+    <main class="hidden">
         <section class="hero">
-            <h1>Bienvenue à l'École d'Informatique</h1>
-            <p>Formations de Bachelor à Master, avec accompagnement pour vos voyages à l'étranger.</p>
-            <a href="programmes.html" class="btn">Découvrez nos programmes</a>
+            <div class="hero-content">
+                <!-- Updated hero content to be more professional and focused on KEYCE -->
+                <h1>KEYCE - Votre Avenir dans l'Informatique</h1>
+                <p>Formations d'excellence en informatique du Bachelor au Master avec des opportunités internationales</p>
+                <div class="hero-buttons">
+                    <a href="programmes.html" class="btn-primary">Découvrir nos formations</a>
+                    <a href="contact.html" class="btn-secondary">Nous contacter</a>
+                </div>
+            </div>
         </section>
+
+        <!-- Improved overview section with better content -->
         <section class="overview">
-            <h2>Pourquoi nous choisir ?</h2>
-            <p>Nos programmes innovants en informatique, combinés à un soutien pour les expériences internationales.</p>
+            <div class="container">
+                <h2>Pourquoi Choisir KEYCE ?</h2>
+                <p class="overview-text">KEYCE est un établissement d'enseignement supérieur spécialisé en informatique qui forme les professionnels de demain. Nos programmes innovants, reconnus par l'État, vous préparent aux métiers du numérique avec une dimension internationale forte.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Nos Atouts</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Diplômes Reconnus</h3>
+                        <p>Nos diplômes Bachelor et Master sont reconnus par l'État et valorisés par les entreprises du secteur informatique en France et à l'international.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💼</div>
+                        <h3>Insertion Professionnelle</h3>
+                        <p>95% de nos diplômés trouvent un emploi dans les 6 mois grâce à notre réseau d'entreprises partenaires et notre accompagnement personnalisé.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Mobilité Internationale</h3>
+                        <p>Partez étudier ou effectuer un stage à l'étranger grâce à nos partenariats avec des universités en Europe, Amérique et Asie.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Pédagogie Innovante</h3>
+                        <p>Apprentissage par projets, hackathons, cas pratiques d'entreprises et technologies de pointe pour une formation concrète et actuelle.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👥</div>
+                        <h3>Réseau d'Alumni</h3>
+                        <p>Intégrez une communauté de plus de 5000 diplômés travaillant dans les plus grandes entreprises du numérique à travers le monde.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Technologies Actuelles</h3>
+                        <p>Formations sur les technologies les plus demandées : Intelligence Artificielle, Cybersécurité, Cloud Computing, Data Science et DevOps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Années d'Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Diplômés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Taux d'Insertion</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Partenaires Internationaux</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced programs section with clearer descriptions -->
+        <section class="programs-preview">
+            <div class="container">
+                <h2>Nos Formations</h2>
+                <p class="section-subtitle">Des parcours complets du Bachelor au Master pour tous les profils</p>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <h3>Bachelor Informatique</h3>
+                        <p>Formation en 3 ans (Bac+3) couvrant les fondamentaux du développement, des réseaux et des systèmes. Accessible après le baccalauréat.</p>
+                        <a href="bachelor.html" class="btn-link">En savoir plus →</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>Master Cybersécurité</h3>
+                        <p>Spécialisation en 2 ans (Bac+5) pour devenir expert en sécurité informatique, protection des données et gestion des risques numériques.</p>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>Master Intelligence Artificielle</h3>
+                        <p>Formation avancée en 2 ans (Bac+5) en Data Science, Machine Learning et IA pour maîtriser les technologies de demain.</p>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+                    <div class="program-card">
+                        <h3>Master Génie Logiciel</h3>
+                        <p>Expertise en 2 ans (Bac+5) en architecture logicielle, développement avancé et gestion de projets informatiques complexes.</p>
+                        <a href="master.html" class="btn-link">En savoir plus →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added international opportunities section -->
+        <section class="international-highlight">
+            <div class="container">
+                <h2>Vivez une Expérience Internationale</h2>
+                <p class="section-subtitle">KEYCE vous accompagne dans votre mobilité internationale</p>
+                <div class="international-content">
+                    <div class="international-text">
+                        <h3>Étudiez à l'Étranger</h3>
+                        <p>Profitez de nos partenariats avec plus de 50 universités dans le monde pour effectuer un semestre ou une année d'études à l'international. Nous vous accompagnons dans toutes les démarches administratives et de visa.</p>
+                        <h3>Stages Internationaux</h3>
+                        <p>Réalisez vos stages dans des entreprises internationales en Europe, Amérique du Nord ou Asie. Une expérience valorisante pour votre CV et votre développement personnel.</p>
+                    </div>
+                    <div class="international-benefits">
+                        <ul>
+                            <li>✓ Accompagnement personnalisé pour les démarches de visa</li>
+                            <li>✓ Partenariats avec des universités prestigieuses</li>
+                            <li>✓ Possibilité de double diplôme</li>
+                            <li>✓ Bourses de mobilité disponibles</li>
+                            <li>✓ Support logistique et administratif complet</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="international.html" class="btn-primary">Découvrir nos opportunités internationales</a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Prêt à Rejoindre KEYCE ?</h2>
+                <p>Intégrez une école d'excellence et construisez votre carrière dans l'informatique avec une dimension internationale</p>
+                <a href="contact.html" class="btn-primary">Contactez-nous</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 École d'Informatique. Tous droits réservés.</p>
+
+    <footer class="hidden">
+        <div class="container">
+            <p>&copy; 2025 KEYCE Informatique. Tous droits réservés.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
